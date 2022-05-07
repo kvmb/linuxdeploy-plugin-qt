@@ -3,14 +3,14 @@
 set -exo pipefail
 
 case "$ARCH" in
-    x86_64)
+    aarch64)
         base_image=debian:latest
         ;;
     i386)
         base_image=i386/debian:latest
         ;;
     *)
-        echo "Usage: env ARCH=[x86_64|i386] $0"
+        echo "Usage: env ARCH=[aarch64|i386] $0"
         exit 2
 esac
 
